@@ -2,7 +2,6 @@
 <h1>Debt: <%= Record.get_debt %></h1>
 <h1>Total: <%= Record.get_total %></h1>
 
-<% if @records != nil %>
 <table class="table table-hover table-bordered">
   <thead>
     <td>Date</td>
@@ -20,7 +19,4 @@
       <td><%= link_to '<span class="glyphicon glyphicon-trash"></span> Delete'.html_safe, record_path(record), method: :delete, class: "btn btn-sm btn-danger", data: {confirm: 'Are you sure?'} %></td>
     </tr>
   <% end %>
-<% else %>
-<h3>No contents</h3>
-<% end %>
 </table>
