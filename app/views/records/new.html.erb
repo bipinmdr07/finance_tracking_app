@@ -1,12 +1,14 @@
-<%= form_for @record do |f| %>
-  <%= f.label :date %>
-  <%= f.date_field :date %>
+<div class="form-group well">
+  <%= form_for @record do |f| %>
+    <%= f.label :date %>
+    <%= f.date_field :date, class: 'form-control' %>
 
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+    <%= f.label :title %>
+    <%= f.text_field :title, class: 'form-control' %>
 
-  <%= f.label :amount %>
-  <%= f.number_field :amount %>
-
-  <%= f.submit 'Add record' %>
-<% end %>
+    <%= f.label :amount %>
+    <%= f.number_field :amount, class: 'form-control' %>
+    <br>
+    <%= f.submit 'Add record', class: 'btn btn-primary' %>
+  <% end %>
+</div>
