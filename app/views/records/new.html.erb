@@ -1,0 +1,12 @@
+<%= form_for @record do |f| %>
+  <%= f.label :date %>
+  <%= f.date_field :date %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :amount %>
+  <%= f.number_field :amount %>
+
+  <%= f.submit 'Add record' %>
+<% end %>

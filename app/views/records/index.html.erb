@@ -1,0 +1,22 @@
+<% if @records != nil %>
+<table class="table-hover">
+  <thead>
+    <td>Date</td>
+    <td>Title</td>
+    <td>Amount</td>
+    <td></td>
+    <td></td>
+  </thead>
+  <% @records.each do |record| %>
+    <tr>
+      <td><%= record.date %></td>
+      <td><%= record.title %></td>
+      <td><%= record.amount %></td>
+      <td></td>
+      <td></td>
+    </tr>
+  <% end %>
+<% else %>
+<h3>No contents</h3>
+<% end %>
+</table>
